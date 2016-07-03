@@ -1,0 +1,114 @@
+/*Modificado por Renato Leite*/
+
+#basic-modal-content {display:none;}
+
+#simplemodal-overlay {background-color:#000;}
+
+#simplemodal-container {
+    width:785px;
+    height: 615px;
+    color:#bbb;
+    background-color:#fff;
+    border:1px solid #000;
+    -moz-box-shadow: 0 1px 10px #000000;
+    -webkit-box-shadow: 0 1px 10px #000000;
+    box-shadow: 0px 1px 10px #000000;
+    font:12px/20px Helvetica, Arial, sans-serif;
+    color: #262626;
+    padding:5px;
+}
+
+#simplemodal-container .simplemodal-data {
+    padding:8px;
+}
+
+#simplemodal-container code {
+    background:#141414;
+    border-left:3px solid #65B43D;
+    color:#bbb;
+    display:block;
+    font-size:12px;
+    margin-bottom:12px;
+    padding:4px 6px 6px;
+}
+
+#simplemodal-container a {
+    color:#ddd;
+}
+
+#simplemodal-container a.modalCloseImg {
+    background:url(../img/basic/x.png) no-repeat;
+    width:25px;
+    height:29px;
+    display:inline;
+    z-index:3200;
+    position:absolute;
+    top:-15px;
+    right:-16px;
+    cursor:pointer;
+}
+
+#simplemodal-container h3 {
+    color:#000000;
+}
+
+#simplemodal-container input, #simplemodal-container select, #simplemodal-container textarea{
+        padding: 5px;
+        font-size: 15px;
+        text-shadow: 0px 1px 0px #fff;
+        outline: none;
+        background: -webkit-gradient(linear, left top, left bottombottom, from(#EAEAEA), to(#ffffff));
+        background: -moz-linear-gradient(top,  #EAEAEA,  #ffffff);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #A2A2A2;
+        -webkit-box-shadow: 1px 1px 0px #efefef;
+        -moz-box-shadow: 1px 1px 0px #efefef;
+        box-shadow:  1px 1px 0px #efefef;
+}
+
+/** Isso corrige o erro do options */
+#selectwd7 option{
+    color: #000;
+    background-color: #F5F5F5;
+}
+
+#simplemodal-container input:focus, #simplemodal-container textarea:focus, #simplemodal-container select:focus {
+    -webkit-box-shadow: 0px 0px 5px #007eff;
+    -moz-box-shadow: 0px 0px 5px #007eff;
+    box-shadow: 0px 0px 5px #007eff;
+}
+
+#basic-modal-content a {
+    font: 11px Verdana;
+    text-decoration: none;
+    color:#2C66A7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#basic-modal-content a:hover {
+    color:#518ED2;
+    text-decoration: underline;
+}
+
+#basic-modal-content a:visited {
+    font: 11px Verdana;
+    text-decoration: none;
+    color:#2C66A7;
+}
+
+#basic-modal-content a:visited:hover{
+    color:#518ED2;
+    text-decoration: underline;
+}
+
+/** Caso os campos não sejam validos */
+#simplemodal-container .invalid{
+    border: 1px solid #E97070;
+}
+
+#simplemodal-container .invalid:focus{
+    box-shadow:  0px 0px 0px;
+}

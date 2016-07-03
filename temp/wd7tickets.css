@@ -1,0 +1,158 @@
+/*
+    Document   : wd7tickets
+    Created on : 03/12/2012, 22:17:35
+    Author     : Renato Leite
+    Description:
+        Estilo generico do sistema
+*/
+
+body {
+    margin: 0px;
+    padding: 5px;
+    text-align:left;
+}
+
+#bgTopo {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#conteudo {
+    width:820px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul#menu {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 821px;
+    height:30px;
+    margin-left:-1px;
+}
+
+ul#menu li{
+    margin-top:0px;
+    float:left;
+    display: inline;
+    border-right: 1px solid #363636;
+}
+
+div.clear {
+    float: none;
+    clear: both;
+    display: block;
+}
+
+.tituloConsultarChamados{
+    font: 18px Verdana;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.buscaNumeroTicket{
+    width: 200px;
+    height: 22px;
+    font: 15px Verdana;
+    border: 1px solid #0F5E8C;
+}
+
+.caixaFiltroConsulta{
+    display: inline;
+    font-weight: bold;
+}
+
+.caixaFiltroConsulta .botaoEnviar{
+    width: 80px;
+    height: 26px;
+    text-height: 26px;
+    font-weight: bold;
+}
+
+.msgSucesso{
+    width:96%;
+    height: 30px;
+    background-color: #BCFFB3;
+    border: 1px solid #02910A;
+    color: #02910A;
+    font-weight:bold;
+    padding: 10px;
+    line-height:30px;
+}
+
+.msgErro{
+    width:96%;
+    height: 30px;
+    background-color: #FEB4B4;
+    border: 1px solid #B00202;
+    color: #B00202;
+    font-weight:bold;
+    padding: 10px;
+    line-height:30px;
+}
+
+.consultaTituloGrid{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 1px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+}
+
+.consultaItemGrid{
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    display: inline;
+}
+
+.spc2px{
+    margin-left: 2px;
+}
+
+.gridConsulta{
+    width: 100%;
+}
+
+.detalheTicketTitulo{
+    width: 735px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.detalheTicketConteudo{
+    width: 720px;
+    padding: 15px;
+}
+
+.detalheTicketSubTitulo{
+    color: #4A4F51;
+    font-weight: bold;
+    display: inline;
+}
+
+.detalheTicketSubTituloData{
+    font: 11px Arial;
+    display: inline;
+}
+
+.detalhesTicketBoxMensagens{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#rodape{
+    width:820px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font: 11px Verdana;
+    color: #363636;
+}

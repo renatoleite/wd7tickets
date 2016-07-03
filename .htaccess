@@ -1,0 +1,32 @@
+#MODULO ESCRITO POR RENATO LEITE - WWW.AGENCIAWD7.COM.BR
+<IfModule mod_rewrite.c>
+	# Ativa a URL Amiga
+        RewriteEngine On
+        # Condição para deixar usar os nomes dos arquivos ao invez das URLs Amigas
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	# Condição para deixar usar os nomes dos diretorios ao invez das URLs Amigas
+        RewriteCond %{SCRIPT_FILENAME} !-d
+
+	# Passa o php para html
+	RewriteRule ^([^/]*)\.html$ $1.php?%{QUERY_STRING} [NC]
+
+	# Troca para diretorio
+	RewriteRule ^([a-z0-9-]+)?$ index.php?pag=$1 [NC]
+	RewriteRule ^([a-z0-9-]+)/([0-9]+)/?$ index.php?pag=$1&id=$2 [NC]
+
+        # Inlcuir, Alterar, Excluir e Enviar deslogado
+        RewriteRule ^([a-z0-9-]+)/([incluir-]+)/?$ index.php?pag=$1&st=$2 [NC]
+        RewriteRule ^([a-z0-9-]+)/([alterar-]+)/?$ index.php?pag=$1&st=$2 [NC]
+        RewriteRule ^([a-z0-9-]+)/([excluir-]+)/?$ index.php?pag=$1&st=$2 [NC]
+        RewriteRule ^([a-z0-9-]+)/([enviar-]+)/?$ index.php?pag=$1&st=$2 [NC]
+
+        # Mensagem de sucesso
+        RewriteRule ^([a-z0-9-]+)/([sucesso-]+)/?$ index.php?pag=$1&st=$2 [NC]
+
+        # Inlcuir, Alterar, Excluir e Enviar com informação extra
+        RewriteRule ^([a-z0-9-]+)/([incluir-]+)/([a-z0-9-]+)/?$ index.php?pag=$1&st=$2&extra=$3 [NC]
+        RewriteRule ^([a-z0-9-]+)/([alterar-]+)/([a-z0-9-]+)/?$ index.php?pag=$1&st=$2&extra=$3 [NC]
+        RewriteRule ^([a-z0-9-]+)/([excluir-]+)/([a-z0-9-]+)/?$ index.php?pag=$1&st=$2&extra=$3 [NC]
+        RewriteRule ^([a-z0-9-]+)/([enviar-]+)/([a-z0-9-]+)/?$ index.php?pag=$1&st=$2&extra=$3 [NC]
+
+</IfModule>

@@ -1,0 +1,141 @@
+/*
+    Document   : estilo
+    Created on : 03/12/2012, 22:26:14
+    Author     : Renato Leite
+    Description:
+        Estilo generico
+*/
+
+body {
+    background-color: #D7D7D7;
+}
+
+#bgTopo {
+    width: 820px;
+    height: 100px;
+    background-image: url('./img/bgTopo.jpg');
+    border: 5px solid #fff;
+}
+
+#conteudo {
+    background-color:#ffffff;
+    border: 5px solid #fff;
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+a:link {
+    font: 11px Verdana;
+    text-decoration: none;
+    color:#2C66A7;
+}
+
+a:hover {
+    color:#518ED2;
+    text-decoration: underline;
+}
+
+a:visited {
+    font: 11px Verdana;
+    text-decoration: none;
+    color:#2C66A7;
+}
+
+a:visited:hover {
+    color:#518ED2;
+    text-decoration: underline;
+}
+
+ul#menu {
+    background-image: url('./img/bgBotaoInativo.jpg');
+}
+
+ul#menu li a{
+    display: block;
+    background-image: url('./img/bgBotaoInativo.jpg');
+    width: 120px;
+    height: 30px;
+    font: 11px Verdana;
+    font-weight:bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: #E6E6E6;
+}
+
+ul#menu li a:hover{
+    background-image: url('./img/bgBotaoAtivo.jpg');
+}
+
+.tituloConsultarChamados{
+    color: #0F5E8C;
+}
+
+.caixaFiltroConsulta{
+    color: #0F5E8C;
+}
+
+.caixaFiltroConsulta .botaoEnviar{
+    background-color: #0F5E8C;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+.consultaTituloGrid{
+    background-color: #0F5E8C;
+    color: #fff;
+}
+
+.gridConsulta a:link {
+    font: 11px Verdana;
+    text-decoration: none;
+    color:#000000;
+}
+
+.gridConsulta a:hover {
+    color:#2C66A7;
+}
+
+.gridConsulta a:visited {
+    font: 11px Verdana;
+    text-decoration: none;
+    color:#000000;
+}
+
+.gridConsulta a:visited:hover {
+    color:#2C66A7;
+}
+
+.detalheTicketNomeResposta{
+    color: #2C66A7;
+    display: inline;
+}
+
+.detalheTicketInfoTop{
+    color: #82878d;
+    display: inline;
+}
+
+.tituloTicket{
+    background: #d9e1e4;
+    color: #357CCA;
+}
+
+.respostaTicket{
+    background: #73b011;
+    color: #fff;
+}
+
+.detalheTicketConteudo{
+    width: 720px;
+    padding: 15px;
+    background: #f0f3f4;
+}
+
+.conteudoTicket{
+    background: #f0f3f4;
+}
+
+.conteudoRespostaTicket{
+    background: #DFECCA;
+}
